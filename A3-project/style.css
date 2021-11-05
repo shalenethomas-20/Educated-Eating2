@@ -1,0 +1,241 @@
+/*-----------DOCUMENT-------------*/
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100%;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif; font-size: 22px;
+    scroll-padding-top: 100px;
+    background-color: #c6ffdd;
+    background-image: linear-gradient(62deg, #c6ffdd 17%, #fbd786 51%, #f7797d 100%);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: .5%;
+}
+
+h1 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2 {
+    font-weight: medium;
+    font-style: italic;
+}
+
+.section {
+    text-align: center;
+    height: 100vh;
+    padding: 3%;
+}
+
+/*-----------NAVIGATION BAR-----------*/
+
+.page-header {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    left: 10%;
+    height: 6%;
+    background: #333;
+    color: #fff;
+    border-radius: 5%;
+    text-align: center;
+    z-index: 2;
+}
+
+.primary-nav a:hover {
+    background-color:#b8dbd9;
+    color: white;
+    padding: 0.5%;
+    height: 6%;
+}
+
+.primary-nav a{
+    float: left;
+    color: white;
+    width: 23%;
+    margin-top: .2%;
+}
+
+.s-home .inner {
+    display: flex;
+}
+
+/*-------------HOME-----------------*/
+.home-content,
+.home-image {
+    width: 35%;
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.bowl-image {
+    margin-top: 10%;
+    width: 70%;
+    margin-left: 4%;
+}
+
+.onion-image {
+    position: absolute;
+    top: 36%;
+    width: 8%;
+    left: 80%;
+}
+.egg-image {
+    position: absolute;
+    top: 21%;
+    width: 15%;
+    left: 72%;
+}
+.carrot-image {
+    position: absolute;
+    top: 33%;
+    width: 12%;
+    left: 66%;
+}
+.tomato-image {
+    position: absolute;
+    top: 16%;
+    width: 8%;
+    left: 65%;
+}
+
+#scroll {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    top: 90%;
+    left: 90%;
+}
+
+#scrollheader {
+    padding: 1%;
+    cursor: grabbing;
+    z-index: 1;
+    color: goldenrod;
+}
+
+/*------------TIPS-----------------*/
+.s-tips {
+    overflow: hidden;
+}
+
+.tp-slide-wrap {
+    width: 200vw;
+    display: flex;
+    height: 100vh;
+}
+
+.tips-headings h1, .tips-headings h2 {
+    margin-left: -15%;
+}
+
+/*---------what's-bad-about----------*/
+
+.img-caption{
+    margin-top: 2%;
+    text-align: center;
+    width: 80%;
+}
+
+.click-show {
+    margin-top: 0%;
+    display: flex;
+}
+
+.muffin-img {
+    margin-left: 0;
+    width: 20%;
+}
+
+.granola-bar-img {
+    width: 40%;
+}
+
+.granola-bar-img change-img {
+    width: 20%;
+}
+
+.doritos-img {
+    width: 20%;
+}
+
+/*-----------products--------------*/
+.harvest-snaps-img {
+    width: 30%;
+}
+
+.chocolate-bar-img {
+    width: 20%;
+}
+
+.cranberries-img {
+    width: 30%;
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+    cursor: pointer;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+
+/*-------------RECIPES-------------*/
+.recipe-book {
+    display: flex;
+    width: 100vw;
+    margin-left: 12%;
+}
+
+.Recipe1, .Recipe2, .Recipe3, .Recipe4, .Recipe5, .Recipe6 {
+    width: 10%;
+    margin: 1%;
+    transition: transform .2s;
+    cursor: pointer;
+} 
+.Recipe1:hover, .Recipe2:hover, .Recipe3:hover, .Recipe4:hover, .Recipe5:hover,.Recipe6:hover {
+    transform: scale(5);
+}
+
+/*-------TIME-MANAGEMENT-------------*/
+.s-time-m {
+    height: 100vh;
+}
+
+.exercise1-img {
+    width: 22%;
+}
+
+.dialog-overview {
+    float: left;
+    top: 30%;
+}
+
+/*--------RESPONSIVE DESIGN---------*/
+@media screen and (max-width: 768px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 20%;
+      height: 10%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+    .home-content,
+    .home-image {
+        width: 25%;
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 5%;
+}
+  }

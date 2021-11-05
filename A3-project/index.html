@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educated Eating</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.57/dist/themes/light.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header class="page-header">
+    <nav class="primary-nav">
+      <a href="#home"><sl-icon name="house-door"></sl-icon></a>
+      <a href="#tips"><sl-icon name="lightbulb"></sl-icon></a>
+      <a href="#recipes"><sl-icon name="pencil-square"></sl-icon></a>
+      <a href="#tm"><sl-icon name="stopwatch"></sl-icon></a>
+    </nav>
+  </header>
+
+  <div class="section s-home" id="home">
+    <h1>Educated Eating</h1>
+    <div class="inner">
+      <div class="home-content">
+        <p>
+          Join us as we learn to turn healthy eating 
+          into an immediate, implementable lifestyle.
+        </p>
+      </div>
+  
+      <div class="home-image">
+        <img src="images/bowl.png" class="bowl-image"  alt="A bowl of rice.">
+        <img src="images/Onion.png" class="onion-image"  alt="An onion.">
+        <img src="images/Egg.png" class="egg-image"  alt="An egg.">
+        <img src="images/carrot.png" class="carrot-image"  alt="A carrot.">
+        <img src="images/Tomato.png" class="tomato-image"  alt="A tomato.">
+      </div>
+    </div>
+  </div>
+  
+  <div class="section s-tips" id="tips">
+    <div class="tp-slide-wrap">
+      <!-- What's Bad about -->
+      <div class="tp-slide tips-headings">
+        <h1>Tips</h1>
+        <h2>What's bad about...?</h2>
+        <div class="inner">
+          <div class="img-caption">
+              <p>
+                Avoid foods high in processed sugars, saturated content, 
+                sodium, calorie intake but are low in fiber. 
+                Click to find better alternatives.
+              </p>
+            </div>
+          <div class="click-show">
+            <img src="images/Muffin.png" data-src="images/C-A-Clusters.png" class="muffin-img change-image clusters-img"  alt="A raspberry almond muffin.">
+            <img src="images/Granola-Bar.png" data-src="images/Breakfast-Yogurt-Pops-recipe2-12062017.png" class="granola-bar-img change-image"  alt="A nut granola bar.">
+            <img src="images/Doritos-Chips.png" data-src="images/Cashews.png" class="doritos-img change-image"  alt="A packet of Nacho Cheese Doritos.">
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Products -->
+      <div class="tp-slide" id="tp-slide">
+        <h1>Tips</h1>
+        <h2>Products</h2>
+        <div class="inner">
+          <div class="product-gallery">
+            <img src="images/HS.png" class="harvest-snaps-img zoom"  alt="Harvest Snaps' baked pea chips.">
+            <img src="images/Pico-Sea-Salt-Chocolate.png" class="chocolate-bar-img zoom"  alt="Pico Sea Salt Chocolate.">
+            <img src="images/Organic-Cranberries.png" class="cranberries-img zoom"  alt="Ocean Spray Frozen Cranberries.">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section s-recipes" id="recipes">
+    <h1>Recipes</h1>
+    <div class="recipe-book">
+      <img src="images/IMG_5344.JPG" class="Recipe1" alt="Recipes for pork & capsicum tacos and barbequed broccolini.">
+      <img src="images/IMG_5345.JPG" class="Recipe2" alt="Recipes for fast shopping.">
+      <img src="images/IMG_5349.JPG" class="Recipe3" alt="Vegan recipes.">
+      <img src="images/IMG_5354.JPG" class="Recipe4" alt="More vegan recipes.">
+      <img src="images/IMG_5355.JPG" class="Recipe5" alt="Cooling desserts.">
+      <img src="images/IMG_5364.JPG" class="Recipe6" alt="Chicken recipes.">
+    </div>
+  </div>
+
+  <div class="section s-time-m" id="tm">
+    <h1>Time-management</h1>
+    <div class="tm-exercise-man">
+      <img src="images/Exercise1.svg" data-src="images/Exercise2.svg" class="exercise1-img replace-img" id='replace-img' alt="A silhouette doing jumping jacks.">
+    </div>
+    <div class="tm-facts">
+      <sl-dialog label="Motivation" class="dialog-overview">
+        Make a list to encourage you to complete tasks.
+        <sl-button slot="footer" type="primary">Close</sl-button>
+      </sl-dialog>
+      
+      <sl-button>Motivation</sl-button>
+      <script>
+        const dialog = document.querySelector('.dialog-overview')
+        const openButton = dialog.nextElementSibling
+        const closeButton = dialog.querySelector('sl-button[slot="footer"]')
+
+        openButton.addEventListener('click', () => dialog.show())
+        closeButton.addEventListener('click', () => dialog.hide())
+      </script>
+      
+      
+      <sl-progress-bar value="100" 
+       style="--height: 3px; width: 100vw">
+      </sl-progress-bar>
+    </div>
+  </div>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>
